@@ -1,119 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/reset.css">
-    <link rel="stylesheet" href="../css/style1.css">
+    <title>Derbes Coffee Company</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="icon" href="../images/derbes.ico">
-    <title>My Website - Home</title>
+    <link rel="stylesheet" href="../styles/fonts/basic.css">
+    
 </head>
+
 <body>
-
-<header>
-    <div class="containerMain">
-        <div class="header">
-
-            <div class="first">
-                <div><img src="../images/derbes.png" alt="derbes"></div>
-            
-                <nav>
-                    <ul class="navbar">
-                        <li class="navitem"><a href="home.html">Home</a></li>
-                        <li class="navitem"><a href="about.html">About</a></li>
-                        <li class="navitem"><a href="services.html">Menu</a></li>
-                        <li class="navitem"><a href="contact.html">Contact</a></li>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="../images/derbes.png" alt="derbes" width="90" height="84">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="home.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="services.html">Menu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
                     </ul>
-                </nav>
+                </div>
+                <!-- <div class="second">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="btn btn2 me-4" href="contact.html">
+                        </li>
+                        <li class="nav-item">
+                            <a class="btn btn-outline-success me-2" href="home.html">Sign in</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="btn btn-outline-success" href="home.html">Join now</a>
+                        </li>
+                    </ul>
+                </div> -->
             </div>
+        </nav>
+    </header>
 
-            <div class="second">
-                <div class="FindStore"><a href="#">Find Store</a></div>
-                <div class="Login"><button class="btn1" type="button"><a href="" target="_blank">Sign in</a></button></div>
-                <div class="Register"><button class="btn2"><a href="#" target="_blank">Join now</a></button></div>
+    <main class="bg">
+        <div class="container">
+            <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="../images/DerbesMain.png" alt="DerbesMain" class="d-block" width="1300px" height="800px">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../images/almaty.jpg" class="d-block " width="1300px" height="800px" alt="almaty">
+                    </div>
+                    <div class="carousel-item ">
+                        <img src="../images/DerbesHistoryOftea.jpg" class="d-block" width="1300px" height="800px" alt="history">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#hero-carousel"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#hero-carousel"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
-
         </div>
-    </div>
-</header>
+    </main>
 
-<hr color="grey">
+    <footer>
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-3">
+                    <h4><b>About us</b></h4>
 
-<main class="bg">
-    <div class="containerMain">
-        <img src="../images/DerbesMain.png" alt="DerbesMain">
-    </div>
-</main>
+                    <p class="mt-4">Our Company<br> Our Coffee<br> Stories and News<br> Derbes Archive<br>
+                        Investor Relations<br> Customer Services</p>
+                </div>
+                <div class="col-3">
+                    <h4><b>Careers:</b></h4>
+                    <p class="mt-4">
+                        Culture and Values<br> Inclusion, Diversity and Equity<br> College Achievement Plan<br>
+                        Alumni Community<br> K.Z. careers</p>
+                </div>
+                <div class="col-3">
+                    <h4><b>Social Impact:</b></h4>
+                    <p class="mt-4">People<br> Planet<br> Environmental and Social Impact Reporting</p>
+                </div>
+                <div class="col-3">
+                    <h4><b>For Business Partners:</b></h4>
+                    <p class="mt-4">Landlord Support Center<br> Suppliers<br> Corporate Gift Card Sales<br>
+                        Office and Foodservice Coffee</p>
+                </div>
+            </div>
+        </div>
+    </footer>
 
-<footer>
-    <div class="containerMain">
-        <hr>
-        <div class="footer">
-            <hr>
-            <table>
-                <tr>
-                    <td>
-                        <div class="footer">
-                            <!-- Your existing HTML code goes here -->
-                            <div class="section">
-                                <div class="title">About us:</div>
-                                <ul>
-                                    <li><strong>Our Company</strong></li>
-                                    <li><strong>Our Coffee</strong></li>
-                                    <li><strong>Stories and News</strong></li>
-                                    <li><strong>Derbes Archive</strong></li>
-                                    <li><strong>Investor Relations</strong></li>
-                                    <li><strong>Customer Services</strong></li>
-                                </ul>
-                            </div>
-            
-                            <div class="section">
-                                <div class="title">Careers:</div>
-                                <ul>
-                                    <li><strong>Culture and Values</strong></li>
-                                    <li><strong>Inclusion, Diversity and Equity</strong></li>
-                                    <li><strong>College Achievement Plan</strong></li>
-                                    <li><strong>Alumni Community</strong></li>
-                                    <li><strong>K.Z. careers</strong></li>
-                                </ul>
-                            </div>
-            
-                            <div class="section">
-                                <div class="title">Social Impact:</div>
-                                <ul>
-                                    <li><strong>People</strong></li>
-                                    <li><strong>Planet</strong></li>
-                                    <li><strong>Environmental and Social Impact Reporting</strong></li>
-                                </ul>
-                            </div>
-            
-                            <div class="section">
-                                <div class="title">For Business Partners:</div>
-                                <ul>
-                                    <li><strong>Landlord Support Center</strong></li>
-                                    <li><strong>Suppliers</strong></li>
-                                    <li><strong>Corporate Gift Card Sales</strong></li>
-                                    <li><strong>Office and Foodservice Coffee</strong></li>
-                                </ul>
-                            </div>
-            
-                            <div class="section">
-                                <div class="title">Order and Pick Up:</div>
-                                <ul>
-                                    <li><strong>Order on the App</strong></li>
-                                    <li><strong>Order on the Web</strong></li>
-                                    <li><strong>Delivery</strong></li>
-                                    <li><strong>Order and Pick Up Options</strong></li>
-                                    <li><strong>Explore and Find Coffee for Home</strong></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </td>
-                </tr>
-            </table>
-            <hr>
-        </footer>
-
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.min.js" integrity="sha512-WW8/jxkELe2CAiE4LvQfwm1rajOS8PHasCCx+knHG0gBHt8EXxS6T6tJRTGuDQVnluuAvMxWF4j8SNFDKceLFg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js" integrity="sha512-+k1pnlgt4F1H8L7t3z95o3/KO+o78INEcXTbnoJQ/F2VqDVhWoaiVml/OEHv9HsVgxUaVW+IbiZPUJQfF/YxZw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        $(document).ready(function () {
+            $('#carouselExampleIndicators').carousel();
+        });
+    </script>
+        
 </body>
+
 </html>

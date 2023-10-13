@@ -1,67 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="icon" href="../images/derbes.ico">
-    <title>Derbes Coffee Company</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Derbes Coffee Company</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="icon" href="../images/derbes.ico">
+  <link rel="stylesheet" href="../styles/fonts/basic.css">
+
 </head>
+
 <body>
-<header>
-    <div class="containerMain">
-        <div class="header">
-
-            <div class="first">
-                <div><img src="../images/derbes.png" alt="derbes"></div>
-            
-                <nav>
-                    <ul class="navbar">
-                        <li class="navitem"><a href="home.html">Home</a></li>
-                        <li class="navitem"><a href="about.html">About</a></li>
-                        <li class="navitem"><a href="services.html">Menu</a></li>
-                        <li class="navitem"><a href="contact.html">Contact</a></li>
-                    </ul>
-                </nav>
-            </div>
-
-            <div class="second">
-                <div class="FindStore"><a href="#">Find Store</a></div>
-                <div class="Login"><button class="btn1" type="button"><a href="" target="_blank">Sign in</a></button></div>
-                <div class="Register"><button class="btn2"><a href="#" target="_blank">Join now</a></button></div>
-            </div>
-
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="../images/derbes.png" alt="derbes" width="90" height="84">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="home.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="services.html">Menu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
         </div>
-    </div>
-</header>
-<hr color="grey">
+        <!-- <div class="second">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+            </li>
+            <li class="nav-item">
+              <a class="btn btn-outline-success me-2" href="home.html">Sign in</a>
+            </li>
+            <li class="nav-item">
+              <a class="btn btn-outline-success" href="home.html">Join now</a>
+            </li>
+          </ul>
+        </div> -->
+      </div>
+    </nav>
+  </header>
 
-<main>
-  <section>
-    <h2>Contact Information</h2>
-    <address>
-      <p>Улица Сыганак,15 </p>
-      <p>Kazakhstan, Astana</p>
-      <p>Email: asimovilhazhan@gmail.com</p>
-      <p>Phone: +7751877036</p>
-    </address>
-  </section>
-  <section>
-    <h2>Contact Form</h2>
-    <!-- i write put, rather than post because if i write post,i cannot post into html,than when i will add back,until that will 404  -->
-    <!-- when will add back -->
-    <form action="../pages/404.html" method="put"> 
-       <label for="name">Name:</label>
-      <input type="text" id="name" name="name" required>
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required>
-      <label for="message">Message:</label>
-      <textarea id="message" name="message" rows="4" required></textarea>
-      <button type="submit">Submit</button>
-    </form>
-  </section>
- 
-  <p>&copy; 2023 My Website</p>
-</footer>
+  <main class="container mt-4">
+    <section>
+      <h2>Contact Information</h2>
+      <address>
+        <p>Улица Кайым Мухамедханов, 12</p>
+        <p>Kazakhstan, Astana</p>
+        <p>Email: 221982@astanait.edu.kz</p>
+        <p>Phone: +77751877036</p>
+      </address>
+    </section>
+    <section>
+      <h2>Contact Form</h2>
+      <form action="../pages/404.html" method="put" class="needs-validation">
+        <div class="mb-3">
+          <label for="name" class="form-label">Name:</label>
+          <input type="text" id="name" name="name" class="form-control" required>
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email:</label>
+          <input type="email" id="email" name="email" class="form-control" required>
+        </div>
+        <div class="mb-3">
+          <label for="message" class="form-label">Message:</label>
+          <textarea id="message" name="message" class="form-control" rows="4" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </section>
+  </main>
+  <footer class="container text-center mt-4">
+    <p>&copy; 2023 My Website</p>
+  </footer>
+
+  <!-- Bootstrap JS and jQuery -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-pzjw8f+ua8e5j8y2kz4m5lh4zr5lgk47l9vSKCEq1GY3Sxd7+9AXNl92g6J5cLhLb"
+    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+Knujsl5B2omZo5p7wrOdrAYd1Pz8M+3Bd7f7f0pT6VdAyBp"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>
